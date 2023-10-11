@@ -1,1 +1,28 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: rgb(77, 189, 77);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 200px;
+  width: 140px;
+  background-color: white;
+  border: 5px;
+  border-color: black;
+  border-radius: 7px;
+  padding: 10px;
+}
+.bottom-corner {
+  align-self: end;
+}
+.bottom-corner,
+.top-corner {
+  font-size: 30px;
+  color: red;
+}
+.card-number {
+  margin: auto;
+  font-size: 50px;
+}
