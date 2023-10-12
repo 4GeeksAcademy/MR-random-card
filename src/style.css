@@ -13,16 +13,39 @@ body {
   border-color: black;
   border-radius: 7px;
   padding: 10px;
+  position: relative;
+}
+.top-corner {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 50px;
 }
 .bottom-corner {
-  align-self: end;
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  font-size: 50px;
 }
-.bottom-corner,
-.top-corner {
-  font-size: 30px;
-  color: red;
-}
+
 .card-number {
   margin: auto;
   font-size: 50px;
+}
+& .spade:after {
+  content: "\2660";
+}
+
+.club:after {
+  content: "\2663";
+}
+
+.diamond:after {
+  content: "\2666";
+  color: red;
+}
+
+.heart:after {
+  content: "\2665";
+  color: red;
 }
