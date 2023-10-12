@@ -4,8 +4,19 @@ window.onload = () => {
   let topcorner = document.querySelector(".top-corner");
   let bottomcorner = document.querySelector(".bottom-corner");
   let cardnumber = document.querySelector(".card-number");
+  setInterval(() => {
+    selectedpinta = RandomPintaGenerator();
+  }, 10000);
+  setInterval(() => {
+    document.querySelector(".top-corner").classList.remove(selectedpinta);
+    topcorner.classList.add(selectedpinta);
+    document.querySelector(".bottom-corner").classList.remove(selectedpinta);
+    bottomcorner.classList.add(selectedpinta);
+    document.querySelector(".card-number");
+    cardnumber.innerHTML = RandomNumberGenerator();
+  }, 10000);
 
-  const selectedpinta = RandomPintaGenerator();
+  let selectedpinta = RandomPintaGenerator();
 
   topcorner.classList.add(selectedpinta);
   bottomcorner.classList.add(selectedpinta);
